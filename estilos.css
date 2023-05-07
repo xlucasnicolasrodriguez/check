@@ -1,0 +1,83 @@
+
+.carousel-item > img{
+    filter: brightness(50%);
+}
+
+#comprartkt-nav{
+    color:rgb(6, 131, 6);
+}
+
+#btn-orador{
+    background-color:transparent; 
+    color:white;
+}
+
+#btn-orador:hover{
+    background-color:rgba(0, 0, 0, 0.747); 
+    color:white;
+}
+
+#oradores-card{
+    gap: 1.5rem;
+}
+.card{
+    width: 17rem;
+}
+
+.subrayado{
+    border-bottom: 0.1rem dashed #696767;
+    text-decoration: none; 
+}
+
+.no-gutters>[class*=col-]{
+    padding-right: 0.0625rem;
+}
+
+.textos-varios{
+    font-size: 0.7813rem;
+    line-height: 1.6rem;
+    color:rgb(247, 240, 240);
+}
+
+.textos-form{
+    font-size: 0.86rem;
+    line-height: 1.6rem;
+}
+
+.textos-card{
+    font-size: 0.68rem;
+    line-height: 1.5rem;
+    color: darkslategray;
+    font-weight: 480;
+}
+
+.btn-enviar{
+    background-color: #96C93E; 
+    color:white
+}
+
+#footer{
+    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,114,1) 100%);
+}
+
+#footer > li > a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:7rem;
+    color: white;
+}
+
+
+@media (min-width:768px)  {
+    .carousel-item > img{
+        max-height: 100vh;
+        width: 100vw;
+    }
+    #footer{
+        gap:2rem;
+    }
+    .slide_caption{
+        padding-bottom: 5%;
+    }
+}
