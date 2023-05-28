@@ -7,6 +7,10 @@
     color:rgb(6, 131, 6);
 }
 
+#comprartkt-nav:hover{
+    color:rgb(147, 245, 82);
+}
+
 #btn-orador{
     background-color:transparent; 
     color:white;
@@ -178,6 +182,9 @@
     color: var(--gray-600);
 }
 
+#ticketsBorrar, #ticketsResumen{
+    color: white;
+}
 
 .tickets-form .ticketsOutput {
     width: 100%;
@@ -190,6 +197,7 @@
 
 .ticketsOutput .ticketsValue {
     float: left;
+    color: rgb(3, 3, 136);
 }
 
 .ticketsOutput .ticketsBuy {
@@ -197,15 +205,10 @@
     cursor: pointer;
 }
 
-.tickets-form .ticketsBuy::after {
-    font: var(--fa-font-solid);
-    content: "\f07a";
-}
-
 
 .tickets-form .btnTickets {
     width: 49%;
-    background-color: #5eee51;
+    background-color: #73bd48;
     color: var(--gray-100);
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
