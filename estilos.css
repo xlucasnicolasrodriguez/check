@@ -81,3 +81,134 @@
         padding-bottom: 5%;
     }
 }
+
+
+.tickets .container-tickets {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tickets-category {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.tickets-category .estudiante, .trainee, .junior {
+    width: 30%;
+    min-width: 180px;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.tickets-category .estudiante:hover, .trainee:hover, .junior:hover {
+    transform: scale(1.1);
+}
+
+.tickets-category h2 {
+    font-size: 1.5rem;
+}
+
+.tickets-category h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.tickets-category h5 {
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+
+.tickets-category h6 {
+    font-size: 0.7rem;
+    color: var(--gray-600);
+}
+
+.tickets-category .estudiante {
+    border: 1px solid rgb(3, 3, 252);
+}
+
+
+.tickets-category .trainee {
+    border: 1px solid rgb(34, 215, 228);
+}
+
+.tickets-category .junior {
+    border: 1px solid rgb(247, 162, 6);
+}
+
+
+.container-tickets .tickets-text {
+    text-align: center;
+}
+
+.tickets-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tickets-form .ticketsFirstName, .ticketsLastName {
+    width: 49%;
+    margin: 0.5rem 0;
+    padding: 5px;
+}
+
+.tickets-form .ticketsEmail {
+    width: 100%;
+    padding: 4px;
+}
+
+.tickets-form .labelTicketsQuantity, .labelTicketsCategory {
+    width: 49%;
+    margin: 0.5rem 0;
+}
+
+.tickets-form .ticketsQuantity, .ticketsCategory {
+    width: 100%;
+    padding: 4px;
+}
+
+.tickets-form .ticketsCategory {
+    background-color: transparent;
+    color: var(--gray-600);
+}
+
+
+.tickets-form .ticketsOutput {
+    width: 100%;
+    background-color: rgb(155, 200, 222);
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    color: var(--gray-900);
+}
+
+.ticketsOutput .ticketsValue {
+    float: left;
+}
+
+.ticketsOutput .ticketsBuy {
+    float: right;
+    cursor: pointer;
+}
+
+.tickets-form .ticketsBuy::after {
+    font: var(--fa-font-solid);
+    content: "\f07a";
+}
+
+
+.tickets-form .btnTickets {
+    width: 49%;
+    background-color: #5eee51;
+    color: var(--gray-100);
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}

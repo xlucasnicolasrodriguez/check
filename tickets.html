@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes_integrador_front\codoacodo.png">
+    <title>TP Integrador - 23047 Lucas Nicolas Rodriguez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes_integrador_front\codoacodo.png" width="100" height="60" class="d-inline-block align-top" alt="logo">
+            <a class="navbar-brand" href="#">Conf Bs As</a>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">   
+            <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="/index.html">La conferencia</a>
+            <a class="nav-link" href="/index.html">Los oradores</a>
+            <a class="nav-link" href="/index.html">El lugar y la fecha</a>
+            <a class="nav-link" href="/index.html">Conviérte en Orador</a>
+            <a class="nav-link" id="comprartkt-nav" href="#">Comprar tickets</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+<br>
+<br>
+<br>
+<div id="tickets" class="tickets">
+    <div class="container-tickets">
+        <div class="tickets-category">
+            <div class="estudiante">
+                <h3>Estudiante</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>80%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="trainee">
+                <h3>Trainee</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>50%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="junior">
+                <h3>Junior</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>15%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+        </div>
+        <div class="tickets-text">
+            <h6>VENTA</h6>
+            <h1>VALOR DE TICKET $200</h1>
+        </div>
+
+
+        <form class="ticketsForm" action="">
+            <div class="tickets-form">
+                <input type="text" class="ticketsFirstName" name="Nombre" placeholder="Nombre">
+                <input type="text" class="ticketsLastName" name="Apellido" placeholder="Apellido">
+                <input type="email" class="ticketsEmail" name="Email" placeholder="E-mail">
+                <div class="labelTicketsQuantity">
+                    <label for="Cantidad">Cantidad</label>
+                    <input id="ticketsQuantity" type="text" class="ticketsQuantity" name="Cantidad"
+                        placeholder="Cantidad">
+                </div>
+                <div class="labelTicketsCategory">
+                    <label for="Categoria">Categoria</label>
+                    <select name="Categoria" class="ticketsCategory">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+
+                
+                <output class="ticketsOutput"><span class="ticketsValue">Total a pagar: </span></output>
+                <button id="ticketsBorrar" type="reset" class="btnTickets" name="Borrar">Borrar</button>
+                <button id="ticketsResumen" class="btnTickets" name="Resumen">Resumen</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+    <footer class="mt-5">
+      <ul class="nav justify-content-center align-items-center py-3 text-center" id="footer">
+        <li class="nav-item">
+          <a class="nav-link active" href="">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"href="">Términos y condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Privacidad</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Estudiantes</a>
+      </li>
+      </ul>
+    </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  <script src="/buyticket.js"></script>
+</body>
+</html>
